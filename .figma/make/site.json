@@ -1,0 +1,10 @@
+{
+  "description": "This business portal showcases 株式会社OSR's services in heavy rigging, restoration, and digital signage, offering multilingual access and a premium design.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
