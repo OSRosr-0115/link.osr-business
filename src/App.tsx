@@ -333,7 +333,7 @@ export default function App() {
     </a>
 
     <a
-      href="tel:電話番号"
+      href="tel:0486334952"
       className="contact-button"
     >
       <span>電話で問い合わせ</span>
