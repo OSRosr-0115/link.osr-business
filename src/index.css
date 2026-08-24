@@ -890,25 +890,25 @@ footer {
 
 @supports (-webkit-touch-callout: none) {
   .contact-buttons {
-    position: fixed !important;
-    left: 12px !important;
-    right: 12px !important;
-    bottom: calc(12px + env(safe-area-inset-bottom)) !important;
-    z-index: 99999 !important;
+    
     display: flex !important;
     flex-direction: column !important;
     gap: 10px !important;
     width: auto !important;
     max-width: none !important;
+    pointer-events: auto !important;
   }
 
-  .contact-button {
-    display: flex !important;
-    width: 100% !important;
-    min-height: 54px !important;
-  }
+.contact-button {
+  display: flex !important;
+  width: 100% !important;
+  min-height: 54px !important;
+  position: relative !important;
+  z-index: 100000 !important;
+  pointer-events: auto !important;
+  touch-action: manipulation;
+}
+  
 
-  body {
-    padding-bottom: calc(140px + env(safe-area-inset-bottom));
-  }
+ 
 }
