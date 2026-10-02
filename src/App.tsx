@@ -1,27 +1,34 @@
+import companeyLogo from "./company-logo.png";
+import riggingImage from "./juryo-tobi.png";
+import renovationImage from "./renovation.png";
+import signageImage from "./signage.png";
+import osuraImage from "./osura-instagram.jpeg";
+import osrImage from "./osr-instagram.jpeg";
+
 import { useState } from "react";
 
 type Lang = "ja" | "en" | "zh" | "vi";
 
-const LOGO_URL = "https://res.cloudinary.com/wngor8ac/image/upload/f_auto,q_auto/435229df-1a79-4dc2-82df-ed1318396242";
+const LOGO_URL = companeyLogo;
 
 const businesses = [
   {
     id: "rigging",
-    image: "https://res.cloudinary.com/wngor8ac/image/upload/f_auto,q_auto/08262251-d341-4ed1-a893-af3d5c22087c",
+    image: riggingImage,
     url: "https://www.osr0115.com",
     english: "HEAVY RIGGING",
     icon: "⚙",
   },
   {
     id: "renovation",
-    image: "https://res.cloudinary.com/wngor8ac/image/upload/f_auto,q_auto/image1",
+    image: renovationImage,
     url: "https://renovation.osr-inc.jp",
     english: "RESTORATION & RENOVATION",
     icon: "⌂",
   },
   {
     id: "signage",
-    image: "https://res.cloudinary.com/wngor8ac/image/upload/f_auto,q_auto/d829475d-22f1-490b-8c4a-2b13ede5bb18",
+    image: signageImage,
     url: "https://signage.osr-inc.jp",
     english: "DIGITAL SIGNAGE",
     icon: "▣",
@@ -267,13 +274,13 @@ export default function App() {
   <div className="instagram-list">
 
     <a
-      href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fosr_kasukabe%2F&data=05%7C02%7C%7C9acff30ab7de4251d24108defe80ed03%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639228026852804859%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ShYR8%2Fp6K97UloTElYpP8BeMJti2h13CORFbMkxnpzY%3D&reserved=0"
+      href="https://www.instagram.com/osr_kasukabe/"
       target="_blank"
       rel="noopener noreferrer"
       className="instagram-card"
     >
       <img
-        src="/osr-instagram.jpeg"
+        src={osrImage}
         alt="株式会社OSR Instagram"
         className="instagram-icon"
       />
@@ -290,13 +297,13 @@ export default function App() {
     </a>
 
     <a
-      href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fosr.character%2F&data=05%7C02%7C%7C9acff30ab7de4251d24108defe80ed03%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639228026852845881%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=0gbjoqDI3aK%2Fq3zZGISEgbwadNSLELjK74cIFHpvn4g%3D&reserved=0"
+      href="https://www.instagram.com/osr.character/"
       target="_blank"
       rel="noopener noreferrer"
       className="instagram-card"
     >
       <img
-        src="/osura-instagram.jpeg"
+        src={osuraImage}
         alt="オスラ Instagram"
         className="instagram-icon"
       />
